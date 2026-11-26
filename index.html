@@ -4,212 +4,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Title -->
-    <title>Less Screen, More Life - Awareness campaign</title>
-    <style>
-        body {
-            background: linear-gradient(135deg, #f8fafc 0%, #ffe3e3 100%);
-            font-family: 'Segoe UI', Arial, sans-serif;
-        }
-
-        .navbar {
-            background: linear-gradient(90deg, #ff5858 0%, #ffb347 100%) !important;
-            z-index: 999;
-            position: sticky;
-            top: 0;
-        }
-
-        .navbar-brand,
-        .nav-link {
-            color: #fff !important;
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-
-        .navbar-brand:hover,
-        .nav-link:hover {
-            color: #222 !important;
-        }
-
-        header .container-fluid {
-            background: linear-gradient(120deg, #ff5858 60%, #ffb347 100%);
-            border-radius: 0 0 40px 40px;
-            box-shadow: 0 8px 24px rgba(255, 88, 88, 0.15);
-        }
-
-        h1.display-4 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 8px #ffb34755;
-        }
-
-        .btn-light {
-            color: #ff5858;
-            background: #fff;
-            border: 2px solid #ffb347;
-            font-weight: 600;
-            transition: 0.2s;
-        }
-
-        .btn-light:hover {
-            background: #ffb347;
-            color: #fff;
-            border-color: #ff5858;
-        }
-
-        section#about_us {
-            background: #fff;
-            border-radius: 20px;
-            box-shadow: 0 4px 24px rgba(255, 88, 88, 0.08);
-            padding: 2.5rem 2rem;
-        }
-
-        h2 {
-            color: #ff5858;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-
-        footer {
-            background: linear-gradient(90deg, #ff5858 0%, #ffb347 100%);
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            border-radius: 40px 40px 0 0;
-            margin-top: 3rem;
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-        }
-    </style>
+    <title>Less Screen, More Life - Awareness Campaign</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#home">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="bi bi-sun-fill me-2"></i>Less Screen, More Life
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about_us.html">About us</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#contact_us">Contact us</a>
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact_us">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header id="home">
-        <div class=" container-fluid text-white text-center py-5">
-            <h1 class="display-4">Less Screen, More Life</h1>
-            <p class="lead">An awareness campaign to reduce screen time and promote a healthier lifestyle.</p>
-            <a href="#about_us" class="btn btn-light btn-lg">Learn More</a>
+    <!-- Hero Section -->
+    <header id="home" class="hero-section text-white text-center">
+        <div class="container position-relative" style="z-index: 1;">
+            <span class="badge bg-white text-danger rounded-pill px-3 py-1 mb-2 fw-semibold shadow-sm" style="font-size: 0.8rem;">
+                <i class="bi bi-mortarboard-fill me-1"></i> Student Awareness Project
+            </span>
+            <h1 class="display-5 hero-title mb-2">Less Screen, More Life</h1>
+            <p class="mx-auto mb-3 opacity-90" style="max-width: 560px; font-size: 1rem;">
+                An awareness campaign to reduce screen time, reconnect with the real world, and promote a healthier, happier lifestyle.
+            </p>
+            <a href="#poster" class="btn btn-hero">
+                Explore Campaign <i class="bi bi-arrow-down-short ms-1"></i>
+            </a>
         </div>
     </header>
 
-    <section id="poster" class="container my-5">
-        <div class="row align-items-center">
-            <div class="col-md-6 text-center">
-                <img src="images/poster.png" alt="Less Screen, More Life Poster" class="img-fluid rounded-4 shadow"
-                    style="max-width: 100%; border: 6px solid #ffb347;">
+    <!-- Clear Student Learning Notice -->
+    <section class="container mt-4">
+        <div class="student-notice d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3">
+            <span class="student-notice-badge flex-shrink-0">
+                <i class="bi bi-info-circle me-1"></i> Student Project Notice
+            </span>
+            <p class="mb-0 text-dark" style="font-size: 0.95rem;">
+                <strong>Note:</strong> This website was built by students during their learning period in a short amount of time as a hands-on web development and awareness project.
+            </p>
+        </div>
+    </section>
+
+    <!-- Poster & About Section -->
+    <section id="poster" class="container my-4 py-2">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-4 col-md-5 mx-auto">
+                <div class="poster-frame">
+                    <img src="poster.png" alt="Less Screen, More Life Poster" class="img-fluid">
+                </div>
             </div>
-            <div class="col-md-6">
-                <h3 style="color:#ff5858;">About Our Campaign</h3>
-                <p style="font-size:1.2rem;">
-                    "Less Screen, More Life" is a movement to inspire people to spend less time on devices and more time
-                    enjoying real life. We believe that reducing screen time can help you feel happier, healthier, and
-                    more connected to the world around you.
+            <div class="col-lg-8 col-md-7">
+                <span class="text-uppercase fw-bold small" style="color: var(--secondary); letter-spacing: 1.5px;">Our Mission</span>
+                <h2 class="section-title h2 mt-1 mb-2">About Our Campaign</h2>
+                <p class="text-secondary mb-2" style="line-height: 1.6; font-size: 1rem;">
+                    "Less Screen, More Life" is a movement to inspire people to spend less time on devices and more time enjoying real life. We believe that reducing screen time can help you feel happier, healthier, and more connected to the world around you.
                 </p>
-                <p style="font-size:1.1rem;">
-                    Join us to discover new hobbies, strengthen relationships, and improve your well-being. Every moment
-                    away from the screen is a step towards a better you!
+                <p class="text-muted mb-3" style="line-height: 1.6; font-size: 0.92rem;">
+                    Join us to discover new hobbies, strengthen relationships, and improve your well-being. Every moment away from the screen is a step towards a better you!
                 </p>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="about_us.html" class="btn btn-gradient btn-sm px-3 py-2">
+                        <i class="bi bi-people-fill me-1"></i>Meet the Students
+                    </a>
+                    <a href="#why" class="btn btn-outline-danger btn-sm rounded-pill px-3 py-2 fw-semibold">
+                        Why It Matters
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="slides" class="container my-5">
-        <h2 class="text-center mb-4" style="color:#ff5858;">Why Less Screen, More Life?</h2>
-        <div id="campaignCarousel" class="carousel slide shadow rounded-4" data-bs-ride="carousel"
-            style="background:#fffbe7;">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner rounded-4">
-                <div class="carousel-item active text-center p-5">
-                    <img src="https://img.icons8.com/fluency/96/000000/brain.png" alt="Mental Health" class="mb-3">
-                    <h5 style="color:#ff5858;">Boost Your Mental Health</h5>
-                    <p>Reducing screen time helps lower stress, anxiety, and improves your mood.</p>
-                </div>
-                <div class="carousel-item text-center p-5">
-                    <img src="https://img.icons8.com/fluency/96/000000/walking.png" alt="Physical Activity"
-                        class="mb-3">
-                    <h5 style="color:#ffb347;">Get Active Outdoors</h5>
-                    <p>More time away from screens means more time for exercise and outdoor fun.</p>
-                </div>
-                <div class="carousel-item text-center p-5">
-                    <img src="https://img.icons8.com/fluency/96/000000/family.png" alt="Family Time" class="mb-3">
-                    <h5 style="color:#ff5858;">Connect With Loved Ones</h5>
-                    <p>Enjoy real moments with friends and family, not just virtual ones.</p>
+    <!-- Why Less Screen, More Life? -->
+    <section id="why" class="container my-4 py-2">
+        <div class="text-center mb-4">
+            <span class="text-uppercase fw-bold small" style="color: var(--secondary); letter-spacing: 1.5px;">Benefits</span>
+            <h2 class="section-title h2 mt-1">Why Less Screen, More Life?</h2>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon-wrap">
+                        <img src="https://img.icons8.com/fluency/64/000000/brain.png" alt="Mental Health" width="36" height="36">
+                    </div>
+                    <h5 class="fw-bold mb-2" style="color: var(--primary);">Boost Your Mental Health</h5>
+                    <p class="text-muted mb-0 small">
+                        Reducing screen time helps lower stress, anxiety, and improves your overall mood and focus.
+                    </p>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#campaignCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#campaignCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon-wrap">
+                        <img src="https://img.icons8.com/fluency/64/000000/walking.png" alt="Physical Activity" width="36" height="36">
+                    </div>
+                    <h5 class="fw-bold mb-2" style="color: #e68a00;">Get Active Outdoors</h5>
+                    <p class="text-muted mb-0 small">
+                        More time away from screens means more time for exercise, fresh air, and outdoor fun.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon-wrap">
+                        <img src="https://img.icons8.com/fluency/64/000000/family.png" alt="Family Time" width="36" height="36">
+                    </div>
+                    <h5 class="fw-bold mb-2" style="color: var(--primary);">Connect With Loved Ones</h5>
+                    <p class="text-muted mb-0 small">
+                        Enjoy real, meaningful moments with friends and family, not just virtual ones.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact_us" class="container my-5">
-        <h2 class="text-center mb-4" style="color:#ffb347;">Contact Us</h2>
+    <!-- Contact Us Section -->
+    <section id="contact_us" class="container my-4 py-2">
         <div class="row justify-content-center">
-            <div class="col-md-7">
-                <form style="background:#fffbe7; border-radius:18px; box-shadow:0 4px 24px #ffb34722; padding:2rem;">
-                    <div class="mb-3">
-                        <label for="name" class="form-label" style="color:#ff5858;">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            <div class="col-lg-6">
+                <div class="contact-card">
+                    <div class="text-center mb-3">
+                        <h2 class="section-title h3 mb-1">Contact Us</h2>
+                        <p class="text-muted small mb-0">Have questions or ideas for the campaign? Send us a message!</p>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label" style="color:#ff5858;">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Example@gmail.com" required>
+                    <form id="contactForm">
+                        <div class="mb-2">
+                            <label for="name" class="form-label fw-semibold small" style="color: var(--primary);">Name</label>
+                            <input type="text" class="form-control form-control-sm form-control-modern" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="form-label fw-semibold small" style="color: var(--primary);">Email</label>
+                            <input type="email" class="form-control form-control-sm form-control-modern" id="email" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label fw-semibold small" style="color: var(--primary);">Message</label>
+                            <textarea class="form-control form-control-sm form-control-modern" id="message" rows="3" placeholder="Type your message..." required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-gradient">
+                                <i class="bi bi-send-fill me-2"></i>Send Message
+                            </button>
+                        </div>
+                    </form>
+                    <div id="formSuccess" class="alert alert-success mt-3 d-none rounded-4 mb-0" role="alert">
+                        <i class="bi bi-check-circle-fill me-2"></i>Thank you for your message! (Demo form — no backend connected.)
                     </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label" style="color:#ff5858;">Message</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Type your message..."
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-light"
-                        style="background:linear-gradient(90deg,#ffb347 60%,#ff5858 100%);color:#fff;border:none;font-weight:700;">Send
-                        Message</button>
-                </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        &copy; 2025 Khaled, Moatasem, Abdelrahman All rights reserved.
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <p class="mb-1 fw-semibold">&copy; 2025 Khaled, Moatasem, Abdelrahman. All rights reserved.</p>
+            <small class="opacity-75">Built by students during their learning journey in a short period of time.</small>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            document.getElementById('formSuccess').classList.remove('d-none');
+            this.reset();
+        });
+    </script>
 </body>
+
+</html>
